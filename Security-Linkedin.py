@@ -24,8 +24,9 @@ def loop():
     counter = 0         #Used to see how many passwords were cracked
     
     linkCracked.write("The left column contains the hash and the right are passwords \n\n")
-    for theWord in wordFile:
-        i = i+1
+    for (i,theWord) in enumerate(wordFile):
+    #for theWord in wordFile:
+        #i = i+1
         hasher = append(theWord) 
         print "Password attempt number :%i " %(i)
         for line in linkedin:
